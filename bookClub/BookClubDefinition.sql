@@ -49,7 +49,7 @@ CREATE TABLE Books(
 
 GO
 
-CREATE TABLE GENRES(
+CREATE TABLE Genres(
 	GenreID [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
 	Genre [varchar](25) NOT NULL 
 );

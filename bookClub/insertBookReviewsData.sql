@@ -48,3 +48,10 @@ VALUES
 GO
 
 
+INSERT INTO BookReviews (BookID, Rating, MemberID, Comment)
+VALUES 
+(11, 5, 7, 'One of my favorite books so far, kept be hooked!'),
+(11, 4, 3, 'Really enjoyed it, love thrillers'),
+(11, 2, 6, 'Did not grip me, was bored half way through'),
+(11, 4, 5, 'Such a classic!');
+GO
