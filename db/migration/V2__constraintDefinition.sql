@@ -1,6 +1,3 @@
-USE [BookClub];
-GO
-
 -- Foreign Keys
 
 ALTER TABLE [dbo].[Meetings]
