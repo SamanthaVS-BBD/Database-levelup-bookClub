@@ -1,8 +1,3 @@
-variable "DB_USER" {}
-variable "DB_PASSWORD" {}
-variable "AWS_ACCESSKEY" {}
-variable "AWS_SECRETKEY" {}
-
 terraform {
   required_providers {
     aws = {
