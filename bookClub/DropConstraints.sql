@@ -30,3 +30,7 @@ GO
 ALTER TABLE [dbo].[Attendance]
 	DROP CONSTRAINT [FK_Attendance_Member]
 GO
+
+ALTER TABLE [dbo].[Meetings]
+	DROP CONSTRAINT [date_check]
+GO
