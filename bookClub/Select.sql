@@ -4,7 +4,7 @@ GO
 
 SELECT * FROM dbo.Members;
 
-SELECT * FROM dbo.GENRES;
+SELECT * FROM dbo.Genres;
 
 SELECT * FROM dbo.Authors;
 

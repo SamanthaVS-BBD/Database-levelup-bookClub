@@ -1,6 +1,3 @@
-USE BookClub;
-GO
-
 -- Create a table-valued function to rank members by meeting attendance for a given year
 CREATE FUNCTION dbo.GetMemberAttendanceRanking (@Year INT)
 RETURNS TABLE
