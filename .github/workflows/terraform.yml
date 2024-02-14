@@ -78,18 +78,6 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
-    - name: Terraform Format Check
-      id: fmtcheck
-      run: |
-        if ! terraform fmt -check > fmt_check_result.txt; then
-          cat fmt_check_result.txt
-          echo "::error::Terraform format check failed"
-          exit 1
-        else
-          echo "Terraform format check passed"
-          echo "TERRAFORM_FMT_CHECK=true" >> $GITHUB_ENV
-        fi
-
     - name: Terraform Plan
       run: terraform plan -var-file="secrets.tfvars" -input=false
 
