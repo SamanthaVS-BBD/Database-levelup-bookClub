@@ -48,7 +48,10 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-
+  
+env: 
+  TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
+  
 permissions:
   contents: read
 
