@@ -1,7 +1,3 @@
-USE BookClub;
-
-GO
-
 INSERT INTO GENRES (Genre)
 VALUES 
 ('Classic Literature'),
@@ -13,6 +9,7 @@ VALUES
 ('Thriller'),
 ('Graphic Novel'),
 ('Young Adult'),
-('Historical Fiction');
+('Historical Fiction'),
+('Horror');
 
 GO
