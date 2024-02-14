@@ -1,7 +1,3 @@
-USE BookClub;
-
-GO
-
 INSERT INTO BookReviews (BookID, Rating, MemberID, Comment)
 VALUES 
 (1, 5, 1, 'The symbolism in this book is mesmerizing!'),
@@ -43,15 +39,10 @@ VALUES
 (7, 3, 7, 'The courtroom scenes were gripping.'),
 (8, 4, 8, 'Lee''s commentary on human nature is profound.'),
 (9, 4, 9, 'This book made me question my own biases.'),
-(10, 5, 10, 'Atticus Finch''s closing argument gave me chills.');
-
-GO
-
-
-INSERT INTO BookReviews (BookID, Rating, MemberID, Comment)
-VALUES 
+(10, 5, 10, 'Atticus Finch''s closing argument gave me chills.'),
 (11, 5, 7, 'One of my favorite books so far, kept be hooked!'),
 (11, 4, 3, 'Really enjoyed it, love thrillers'),
 (11, 2, 6, 'Did not grip me, was bored half way through'),
 (11, 4, 5, 'Such a classic!');
+
 GO
