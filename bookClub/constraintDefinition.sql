@@ -1,3 +1,6 @@
+USE BookClub
+GO
+
 -- Foreign Keys
 
 ALTER TABLE [dbo].[Meetings]
@@ -27,3 +30,8 @@ GO
 ALTER TABLE [dbo].[Attendance]
     ADD CONSTRAINT [FK_Attendance_Member] FOREIGN KEY ([MemberID]) REFERENCES [dbo].[Members] ([MemberID]);
 GO
+
+--Date constraint 
+ALTER TABLE [dbo].[Meetings] WITH NOCHECK ADD CONSTRAINT date_check CHECK ([MeetingDate] >= CAST(GETDATE() AS DATE));
+GO
+

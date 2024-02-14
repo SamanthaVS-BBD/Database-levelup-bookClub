@@ -1,4 +1,4 @@
-INSERT INTO GENRES (Genre)
+INSERT INTO Genres (Genre)
 VALUES 
 ('Classic Literature'),
 ('Fantasy'),
