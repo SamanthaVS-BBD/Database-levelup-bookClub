@@ -10,7 +10,7 @@ VALUES
 ('The Picture of Dorian Gray', 8, 1, 'A novel by Oscar Wilde, tells the story of a young man named Dorian Gray who becomes the subject of a painting by artist Basil Hallward.'),
 ('The Hunger Games', 9, 9, 'A dystopian novel by Suzanne Collins, set in the fictional nation of Panem, where young people must fight to the death on live television.'),
 ('The Shining', 10, 11, 'A horror novel by Stephen King, which tells the story of Jack Torrance, an aspiring writer and recovering alcoholic who accepts a position as the off-season caretaker of the historic Overlook Hotel in the Colorado Rockies.'),
-('Gone Girl', 14, 5, 'A thriller novel by Gillian Flynn, which tells the story of a woman who goes missing and the suspicion that falls on her husband.');
+('Gone Girl', 11, 5, 'A thriller novel by Gillian Flynn, which tells the story of a woman who goes missing and the suspicion that falls on her husband.');
 
 
 GO
