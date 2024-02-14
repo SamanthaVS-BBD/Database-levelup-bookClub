@@ -9,8 +9,8 @@ terraform {
 # configured aws provider with proper credentials
 provider "aws" {
   region  = "eu-west-1"
-  access_key = "AKIA3IO2VONNTXOCLS6J"
-  secret_key = "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"
+  access_key = var.AWS_ACCESSKEY
+  secret_key = var.AWS_SECRETKEY
 }
 
 
@@ -75,8 +75,8 @@ resource "aws_db_instance" "bookclub_db_instance" {
   engine                  = "sqlserver-ex"
   multi_az                = false
   identifier              = "double-booked-db"
-  username                = "doubleBookedAdmin"
-  password                = "DoubleBooked"
+  username                = var.DB_USER
+  password                = var.DB_PASSWORD
   instance_class          = "db.t3.small"
   allocated_storage       = 20
   publicly_accessible     = true

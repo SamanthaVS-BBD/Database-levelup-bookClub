@@ -1,7 +1,3 @@
-USE BookClub;
-
-GO
-
 INSERT INTO Attendance (MeetingID, MemberID)
 VALUES 
 (1, 2),
@@ -32,12 +28,7 @@ VALUES
 (4, 3),
 (4, 8),
 (4, 9),
-(4, 10);
-
-GO
-
-INSERT INTO Attendance (MeetingID, MemberID)
-VALUES 
+(4, 10),
 (5, 2),
 (5, 3),
 (5, 10),
