@@ -1,9 +1,6 @@
-USE BookClub;
-
-GO
-
 INSERT INTO Members (FirstName, LastName, Email, PhoneNumber)
-VALUES ('Taylor','Swift','taytay@swifties.com','831233211'),
+VALUES 
+('Taylor','Swift','taytay@swifties.com','831233211'),
 ('Freddy','Mercury','iwanttobreakfree@queen.com','121184452'),
 ('John','Travolta','dirty@dancing.com','735820101'),
 ('Nick','Jonas','nick@jonasbros.com','845581973'),

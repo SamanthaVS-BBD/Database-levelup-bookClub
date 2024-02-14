@@ -1,18 +1,9 @@
-USE BookClub;
-
-GO
-
 INSERT INTO Authors (FirstName, LastName)
 VALUES 
 ('Scott', 'Fitzgerald'),
 ('Joanne', 'Rowling'),
 ('Paulo', 'Coelho'),
-('Harper', 'Lee');
-
-GO
-
-INSERT INTO Authors (FirstName, LastName)
-VALUES 
+('Harper', 'Lee'),
 ('Jane', 'Austen'),
 ('J.D.',  'Salinger'),
 ('J.R.R.', 'Tolkien'),
