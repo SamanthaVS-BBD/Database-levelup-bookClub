@@ -1,6 +1,3 @@
-USE BookClub;
-GO
-
 -- Check if MonthlySummary view exists
 IF OBJECT_ID('MonthlySummary', 'V') IS NOT NULL
 BEGIN

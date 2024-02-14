@@ -1,6 +1,3 @@
-USE BookClub;
-GO
-
 CREATE FUNCTION dbo.CalculateAverageRating (@BookID INT)
 RETURNS DECIMAL(3,2)
 AS
