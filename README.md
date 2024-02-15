@@ -1,4 +1,5 @@
 # Database-levelup-bookClub
+
 Login repo:
 Jira: DB level-up: Book club 
 
@@ -13,7 +14,7 @@ How to set up Terraform, AWS and Flyway Setting Up AWS RDS, Terraform, SQL Serve
 Overview
 This document outlines the requirements and instructions for setting up the database for a book club management system. The system is designed to manage meetings among club members, record notes/thoughts about book topics, and store information about the books discussed.
 
-Deployment Requirements
+Deployment requirements
 Database on AWS Cloud: Utilize any free tier relational database or SQL Server on AWS.
 
 No Serverless Databases: Ensure non-serverless databases are used.
@@ -24,7 +25,7 @@ Database Change Management: Utilize tools like Flyway or Liquibase for database 
 
 Automated Deployment (CI/CD): Automate the deployment process using Continuous Integration/Continuous Deployment practices.
 
-System Requirements
+System requirements
 Table Population: Populate tables such as Members, Meetings, Books, Topics, etc., with relevant data.
 
 Database Objects: Implement at least 1 view, 1 stored procedure, 1 scalar function, and 1 table-valued function with clear business use-cases. For example, a MonthlySummary to display notes from past meetings.
@@ -50,7 +51,7 @@ Project Progress Tracking: Utilize a JIRA board for tracking project progress.
 
 Documentation: Confluence pages for detailed documentation.
 
-Setup Instructions
+Setup instructions
 1. Prerequisites:
 AWS Account
 
@@ -65,7 +66,7 @@ You have generated access keys and secret keys from AWS using the IAM.
 2. Clone Repository:
 git clone <repository-url>
 
-3. Setting Up Terraform for AWS RDS:
+3. Setting up Terraform for AWS RDS:
 Install Terraform from the official website.
 
 Unzip Terraform to a local directory (e.g., C:\Terraform).
@@ -96,14 +97,14 @@ DB password
 
 Edit the Terraform configuration code for creating an RDS instance in main.tf to your credentials, and what you need.
 
-Initializing and Applying Terraform Configuration:
+Initializing and applying Terraform configuration:
 Once done with setting up the main.tf script Initialize Terraform by running terraform init in the terminal.
 
 Run terraform plan -var-file="secrets.tfvars" to check the Terraform configuration.
 
 Apply the Terraform configuration using terraform apply -var-file="secrets.tfvars".
 
-Setting Up SQL Server/ Access Database: 
+Setting  up SQL server/ access database: 
 Wait for the AWS RDS instance to be created after running terraform apply, as this may take some time.
 
 Open Microsoft SQL Server Manager or any SQL client of your choice.
@@ -118,7 +119,7 @@ Login: Username created in secrets.tfvars
 
 Password: Password created in secrets.tfvars
 
-4. Setting Up Flyway for Database Migration:
+4. Setting up Flyway for database migration:
 Download Flyway from the official website.
 
 Unzip Flyway to a local directory (e.g., C:\flyway-10.7.2).
@@ -161,7 +162,7 @@ Remove USE [Database name] from Flyway migration scripts, as Flyway is already c
 
 Run flyway migrate in your terminal or set up a GitHub Action to automatically run flyway migrate when you push to the main branch.
 
-5. Setting Up Flyway with GitHub actions
+5. Setting up Flyway with GitHub actions
 Once Flyway is set up in your repo, navigate to your repo on GitHub 
 
 Select Actions
@@ -217,7 +218,7 @@ You may need to adjust the input parameter value (`BookID`) in the `Select.sql` 
 
  
 
-Monthly Report View
+MonthlyReportView
  
 
 This set of SQL files is designed to create and utilize a view named `MonthlySummary` within the BookClub database. The `MonthlySummary` view provides a comprehensive report of monthly meeting statistics.
@@ -256,7 +257,32 @@ Before executing the `Select.sql` file, ensure that the `MonthlySummary` view ha
 
 You can customize the `Select.sql` file to perform additional analysis or filtering on the data retrieved from the `MonthlySummary` view.
 
+GetBookReviews Table-Valued function
+This SQL script introduces a table-valued function named `GetBookReviews`, designed to retrieve reviews for a specified book from the BookReviews table within the BookClub database.
+
  
+
+Function Definition (GetBookReviews.sql):
+
+Purpose: This script creates a table-valued function that takes a book ID as input and returns a table containing the rating, comment, and member ID for each review of the specified book.
+
+Usage: 
+
+The function `GetBookReviews` accepts one input parameter, `@BookID`, representing the ID of the book for which reviews are to be retrieved.
+
+It returns a table with columns for rating, comment, and member ID from the BookReviews table, filtered by the specified `BookID`.
+
+Example Usage:
+
+To retrieve reviews for a specific book, in the Select.sql file, call the function `GetBookReviews` with the BookID as an argument, like this: `SELECT * FROM dbo.GetBookReviews(1);`
+
+This query will return all reviews for the book with `BookID` equal to 1.
+
+ 
+
+Note:
+
+Before executing the `SELECT` statement to retrieve reviews using the `GetBookReviews` function, ensure that the function has been created by executing the `GetBookReviews.sql` script in the BookClub database.
 
 Attendance Ranking TVF
  
@@ -347,5 +373,22 @@ It will then insert the @genre into the Genres table if the genre does not exist
 
  At this point the @book_title, @variable_genreid, @variable_authorid and
 @book_description will be inserted into the Books table as record within their corresponding columns.
+
+Procedure Insert Meeting
+This procedure inserts a new meeting into the Meetings table given the following parameters:
+
+@MeetingDate DATE,
+
+@BookID INT
+
+The Meetings table has  the following columns:
+
+MeetingID (PK)
+MeetingDate 
+BookID (FK)
+
+This procedure checks to see if there has been a meeting already added with said BookID, it also checks to see if the book exists within the database and checks to see if there is a meeting with the same date. The procedure will insert the new meeting into the Meetings table if it passed the above checks.
+
+ 
 
 This README provides an overview of the database setup for the book club management system. For any further assistance, please refer to the provided resources or contact the project supervisor.
