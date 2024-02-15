@@ -28,6 +28,14 @@ ALTER TABLE [dbo].[Attendance]
     ADD CONSTRAINT [FK_Attendance_Member] FOREIGN KEY ([MemberID]) REFERENCES [dbo].[Members] ([MemberID]);
 GO
 
+ALTER TABLE [dbo].[MemberBook]
+    ADD CONSTRAINT [FK_MemberBook_Book] FOREIGN KEY ([BookID]) REFERENCES [dbo].[Books] ([BookID]);
+GO
+
+ALTER TABLE [dbo].[MemberBook]
+    ADD CONSTRAINT [FK_MemberBook_Member] FOREIGN KEY ([MemberID]) REFERENCES [dbo].[Members] ([MemberID]);
+GO
+
 --Date constraint 
 ALTER TABLE [dbo].[Meetings] WITH NOCHECK ADD CONSTRAINT date_check CHECK ([MeetingDate] >= CAST(GETDATE() AS DATE));
 GO
