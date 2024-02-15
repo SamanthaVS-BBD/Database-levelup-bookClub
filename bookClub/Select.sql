@@ -22,8 +22,12 @@ SELECT dbo.CalculateAverageRating(1) AS AverageRatingForBook1;
 --view
 SELECT * FROM MonthlySummary;
 
---value 
+--table value
 SELECT * FROM dbo.GetMemberAttendanceRanking(2023);
+
+--table value
+SELECT * FROM dbo.GetBookReviews(1);
+
 
 
 --proc
