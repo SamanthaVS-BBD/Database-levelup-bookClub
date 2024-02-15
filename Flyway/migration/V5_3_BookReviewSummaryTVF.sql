@@ -12,3 +12,4 @@ RETURN
     WHERE 
         BookReviews.BookID = @BookID
 );
+GO

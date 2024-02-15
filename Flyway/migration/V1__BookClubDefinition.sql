@@ -60,3 +60,12 @@ CREATE TABLE BookReviews(
 );
 
 GO
+
+CREATE TABLE MemberBook(
+	MemberBookID [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	BookID [int] NOT NULL,
+	MemberID [int] NOT NULL,
+	ReadBook [bit] NOT NULL
+);
+
+GO
