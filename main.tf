@@ -4,6 +4,13 @@ terraform {
       source = "hashicorp/aws"
     }
   }
+
+  backend "remote" {
+    organization = "DoubleBooked_BookClub"
+    workspaces {
+      name = "prod-aws-rds"
+    }
+  }
 }
 
 # configured aws provider with proper credentials
