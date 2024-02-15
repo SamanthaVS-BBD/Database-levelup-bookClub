@@ -1,5 +1,4 @@
 USE BookClub;
-
 GO
 
 SELECT * FROM dbo.Members;
