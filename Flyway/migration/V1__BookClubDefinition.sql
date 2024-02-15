@@ -56,7 +56,7 @@ CREATE TABLE BookReviews(
 	BookID [int] NOT NULL,
 	Rating [int] CHECK (Rating >= 1 AND Rating <= 5), 
 	MemberID [int] NOT NULL,
-	Comment [text] NOT NULL
+	Comment [nvarchar](500) NOT NULL
 );
 
 GO
