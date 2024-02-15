@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-15T08:16:47.768Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="3udrqoe-SlzhVBsD0nme" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-15T08:21:27.469Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="U6I8A-DewMXAczuhqwGJ" version="23.1.2" type="github">
   <diagram name="Page-1" id="bBmiQMMT05Lmb5AKtt61">
-    <mxGraphModel dx="3576" dy="1944" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="#f1f2f2" math="0" shadow="0">
+    <mxGraphModel dx="2385" dy="1365" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="#f1f2f2" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,7 +52,7 @@
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q9-rzhnlszMLg_VfhZps-13" value="Book" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="Q9-rzhnlszMLg_VfhZps-13" value="Book" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#94c2ca;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="810" y="367" width="250" height="200" as="geometry" />
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-14" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="Q9-rzhnlszMLg_VfhZps-13" vertex="1">
@@ -124,7 +124,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-30" value="Author" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="759" y="8" width="250" height="170" as="geometry" />
+          <mxGeometry x="810" y="103" width="250" height="170" as="geometry" />
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-31" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="Q9-rzhnlszMLg_VfhZps-30" vertex="1">
           <mxGeometry y="30" width="250" height="30" as="geometry" />
@@ -166,7 +166,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-40" value="Genre" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="812" y="840" width="250" height="150" as="geometry" />
+          <mxGeometry x="810" y="717" width="250" height="150" as="geometry" />
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-41" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="Q9-rzhnlszMLg_VfhZps-40" vertex="1">
           <mxGeometry y="30" width="250" height="30" as="geometry" />
@@ -207,7 +207,7 @@
             <mxRectangle width="220" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q9-rzhnlszMLg_VfhZps-50" value="" style="endArrow=ERzeroToMany;startArrow=ERone;endFill=1;startFill=0;exitX=0.311;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Q9-rzhnlszMLg_VfhZps-13" target="Q9-rzhnlszMLg_VfhZps-30" edge="1">
+        <mxCell id="Q9-rzhnlszMLg_VfhZps-50" value="" style="endArrow=ERzeroToMany;startArrow=ERone;endFill=1;startFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Q9-rzhnlszMLg_VfhZps-13" target="Q9-rzhnlszMLg_VfhZps-30" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="886" y="311" as="sourcePoint" />
             <mxPoint x="886" y="191" as="targetPoint" />
@@ -220,7 +220,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-52" value="BookReview" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1344" y="365" width="250" height="190" as="geometry" />
+          <mxGeometry x="1318" y="372" width="250" height="190" as="geometry" />
         </mxCell>
         <mxCell id="Q9-rzhnlszMLg_VfhZps-53" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="Q9-rzhnlszMLg_VfhZps-52" vertex="1">
           <mxGeometry y="30" width="250" height="30" as="geometry" />
@@ -261,7 +261,7 @@
             <mxRectangle width="220" height="70" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q9-rzhnlszMLg_VfhZps-62" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;" parent="1" source="Q9-rzhnlszMLg_VfhZps-20" edge="1">
+        <mxCell id="Q9-rzhnlszMLg_VfhZps-62" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Q9-rzhnlszMLg_VfhZps-20" edge="1" target="Q9-rzhnlszMLg_VfhZps-59">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="1065" y="478" as="sourcePoint" />
             <mxPoint x="1341" y="500" as="targetPoint" />
